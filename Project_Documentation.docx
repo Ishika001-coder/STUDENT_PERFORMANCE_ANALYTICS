@@ -1,0 +1,89 @@
+Student Performance Analytics System
+Python Mini Project Documentation
+This project analyzes a 20-student marks dataset and produces individual grades, class and subject summaries, a top-five ranking, and pass/fail counts. The supplied output reports an overall class average of 69.03 and 16 PASS / 4 FAIL results.
+Student and submission details
+Field	Details
+Student name	[Enter student name]
+Roll number	[Enter roll number]
+Class / department	[Enter class or department]
+Institution	[Enter institution name]
+GitHub repository URL	[Add GitHub repository URL]
+
+1. Objective
+Build a Python program that reads student marks and attendance, calculates totals and averages, assigns grades and pass/fail outcomes, and presents useful class-level insights in a readable terminal report.
+2. Technologies used
+Technology	Use
+Python 3.10 or later	Program logic and calculations
+pandas	CSV loading, tabular calculations, sorting, and summaries
+CSV	Portable student records input
+
+3. Dataset description
+The sample contains 20 student records. The dataset columns are Student_ID, Name, Department, Python, Maths, English, and Attendance. Subject marks are out of 100. Totals and averages in the report are calculated from Python, Maths, and English. The expected input filename is student_performance.csv, subject to the filename used in the source code.
+4. Implementation
+1.	Load the CSV dataset into a pandas DataFrame.
+2.	Calculate each student's total and average across the three subjects.
+3.	Apply the grade bands and the PASS/FAIL threshold.
+4.	Compute the class average, minimum and maximum averages, subject averages, top five, and pass/fail counts.
+5.	Print the student-wise summary and complete report.
+Grade and result rules
+Grade	Average
+A+	90 and above
+A	80 to below 90
+B	70 to below 80
+C	60 to below 70
+D	50 to below 60
+F	Below 50
+
+The output treats an average below 50 as FAIL. Dev's average is 48.67, so the accurate row is grade F, result FAIL. With this correction, the summary is 16 PASS and 4 FAIL.
+5. Key features
+•	Student-wise total and average marks
+•	Letter grade and pass/fail classification
+•	Class highest, lowest, and overall averages
+•	Subject-wise averages
+•	Top-five student ranking
+•	Pass/fail statistics and complete student report
+6. Results
+Measure	Output
+Number of students	20
+Overall class average	69.03
+Highest average	93.67 (Isha)
+Lowest average	35.00 (Vihaan)
+Python average	68.30
+Maths average	68.95
+English average	69.85
+PASS / FAIL	16 / 4
+
+Top five students
+Rank	Name	Average	Grade
+1	Isha	93.67	A+
+2	Kiara	91.67	A+
+3	Diya	90.00	A+
+4	Meera	88.33	A
+5	Anika	87.67	A
+
+7. Terminal output screenshots
+The screenshots below show the student marks summary, grades and class statistics, and top-five and pass/fail output.
+Student marks summary
+ 
+Grades, class performance, and subject averages
+ 
+Top five students and pass/fail statistics
+ 
+8. Final outcome
+The program converts the sample dataset into a concise performance report. It identifies the class average as 69.03, reports subject averages of 68.30 in Python, 68.95 in Maths, and 69.85 in English, and shows 16 students passing and 4 failing.
+9. Challenges and learning
+The project practices loading structured data, selecting numeric columns, computing derived values, sorting by performance, and applying consistent grade rules. Cross-checking each student's result against the class totals is essential: Dev's 48.67 average belongs in the F / FAIL category, producing the required 16 PASS and 4 FAIL totals.
+10. Setup and run
+6.	Install Python 3.10 or later.
+7.	Create and activate a virtual environment: python -m venv .venv (Windows: .venv\Scripts\Activate.ps1; macOS/Linux: source .venv/bin/activate).
+8.	Install pandas: python -m pip install pandas.
+9.	Place student_performance.csv beside the Python script.
+10.	Run the program: python student_performance.py (replace with the actual source filename).
+11. GitHub submission checklist
+[ ]  Add the Python source and dataset.
+[ ]  Include README.md and this project documentation.
+[ ]  Keep the screenshots and their relative paths valid.
+[ ]  Fill in student, class, institution, and repository details.
+[ ]  Run the program and verify all summary totals.
+[ ]  Check that the repository contains no private or unrelated data.
+[ ]  Commit, push, and verify the final GitHub repository URL.
